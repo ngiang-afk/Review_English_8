@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #388e3c; /* Xanh lá cây */
+    --accent-color: #ffc107;  /* Vàng tươi */
+    --error-color: #d32f2f;   /* Đỏ */
+    --success-color: #2ecc71;
+    --bg-color: #f1f8e9;      /* Nền xanh lá nhạt */
+    --text-color: #37474f;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    width: 95%;
+    max-width: 850px;
+    text-align: center;
+    border: 8px solid var(--accent-color); /* Khung màu vàng */
+    position: relative;
+}
+
+/* Header trường học */
+.school-header h1 { 
+    color: var(--primary-color); 
+    margin: 0; 
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.school-header h2 { 
+    color: #90a4ae; 
+    font-size: 1.1rem; 
+    border-bottom: 2px solid #e0e0e0; 
+    padding-bottom: 15px;
+    margin-top: 5px;
+}
+
+/* Hiệu ứng Vẹt lắc lư */
+.parrot-box { 
+    font-size: 70px; 
+    margin: 10px 0; 
+    display: inline-block;
+    animation: parrotSwing 1.5s infinite ease-in-out; 
+}
+
+@keyframes parrotSwing { 
+    0%, 100% { transform: rotate(0deg) scale(1); } 
+    25% { transform: rotate(5deg) scale(1.05); } 
+    75% { transform: rotate(-5deg) scale(1.05); } 
+}
+
+/* Bong bóng lời thoại của Vẹt */
+.speech-bubble {
+    background: #fff9c4; /* Màu vàng nhạt */
+    padding: 18px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    border: 3px solid var(--error-color); /* Viền màu đỏ */
+    font-size: 1.05rem;
+    color: var(--text-color);
+    position: relative;
+    box-shadow: 0 4px 0 var(--error-color);
+}
+
+/* Đồng hồ đếm ngược */
+.timer-display {
+    background-color: var(--error-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Câu hỏi */
+.question-text { 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    margin: 20px 0; 
+    display: block; 
+    color: #263238;
+}
+
+/* Lưới đáp án */
+.options-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+}
+
+/* Nút bấm đáp án kiểu Vẹt */
+button.option-btn {
+    padding: 16px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--text-color);
+}
+
+button.option-btn:hover { 
+    background: #e0f7fa;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Thống kê điểm */
+.stats { 
+    margin-top: 30px; 
+    display: flex; 
+    justify-content: space-around; 
+    font-weight: bold; 
+    background: #dcedc8; /* Màu xanh lá nhạt */
+    padding: 15px; 
+    border-radius: 25px;
+    color: #1b5e20;
+}
+
+.correct { color: var(--primary-color); }
+.wrong { color: var(--error-color); }
+
+/* Nút làm lại */
+.restart-btn { 
+    background: var(--accent-color); 
+    color: var(--text-color); 
+    border: none; 
+    padding: 15px 45px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    box-shadow: 0 6px 0 #ff8f00; /* Màu vàng đậm */
+    transition: 0.2s;
+}
+
+.restart-btn:hover {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #ff8f00;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .options-grid { grid-template-columns: 1fr; }
+    #game-container { padding: 1.5rem; border-radius: 20px; }
+}

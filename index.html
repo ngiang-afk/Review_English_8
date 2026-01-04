@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập Cuối Kỳ I Môn Tiếng Anh 8 - THCS ƯỚC MƠ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="school-header">
+            <h1>THCS ƯỚC MƠ</h1>
+            <h2 id="grade-title">Ôn Tập Cuối Kỳ I Môn Tiếng Anh 8 (Tổng hợp 40 câu)</h2>
+        </div>
+
+        <div id="quiz-section">
+            
+            <div class="parrot-box">🦜</div> 
+            <div class="speech-bubble" id="parrot-message">
+                Chào các em! Cùng Vẹt thông thái của trường Ước Mơ chinh phục 40 câu hỏi nhé!
+            </div>
+            
+            <div id="question-container">
+                <div class="timer-display">⏱️ <span id="time-left">20</span>s</div>
+                <span class="question-text" id="question">Đang nạp câu hỏi...</span>
+                <div id="options" class="options-grid"></div>
+            </div>
+
+            <div class="stats">
+                <div>Câu hỏi: <span id="current-pos">1</span>/40</div>
+                <div>Đúng: <span class="correct" id="score-correct">0</span></div>
+                <div>Sai: <span class="wrong" id="score-wrong">0</span></div>
+            </div>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <div class="parrot-box">🦜</div> 
+            <h2>Kết Quả Bài Làm</h2>
+            <div class="speech-bubble">
+                <p id="final-stats"></p>
+                <p id="final-message" style="font-weight: bold; color: var(--accent-color);"></p>
+            </div>
+            <button class="restart-btn" onclick="restartGame()">Làm lại bài thi</button>
+        </div>
+        
+        <audio id="audio-correct" src="https://www.soundjay.com/buttons/button-2.mp3" preload="auto"></audio>
+        <audio id="audio-wrong" src="https://www.soundjay.com/misc/fail-buzzer-01.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
