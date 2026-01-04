@@ -21,11 +21,11 @@ const quizData = [
     { q: "The Cham people in Ninh Thuan are famous for their traditional _______. ", options: ["villages", "rivers", "festivals"], correct: 2, hint: "Người Chăm nổi tiếng với các lễ hội (festivals) truyền thống của họ." },
     { q: "The store opens _______than the supermarket does.", options: ["more earlier", "earlier", "early"], correct: 1, hint: "So sánh hơn của trạng từ 'early' là 'earlier' (Không dùng 'more earlier')." },
     { q: "_______ people enjoy a walk in the park.", options: ["A", "An", "Ɵ"], correct: 2, hint: "'People' là danh từ số nhiều chung chung, không dùng mạo từ A/An (Dùng ∅)." },
-    { q: "Each ethnic group has its own __(24)________ which reflects its history and beliefs.", options: ["culture", "cultural", "cultures", "culturally"], correct: 0, hint: "Sau tính từ sở hữu 'its own' cần một danh từ số ít (culture)." },
-    { q: "In many villages, people share __(25)________ information and work together to support their community.", options: ["many", "a few", "much", "an"], correct: 2, hint: "'Information' là danh từ không đếm được, dùng 'much'." },
-    { q: "Ethnic people often live close to nature, and they respect __(26)________ nature", options: ["a", "∅", "an", "the"], correct: 3, hint: "Cụm từ cố định: 'respect the nature' (tôn trọng thiên nhiên)." },
-    { q: "In the future, the government __(27)________ more programs to help preserve the cultures of ethnic minorities.", options: ["supports", "supported", "will support", "is supporting"], correct: 2, hint: "Dấu hiệu 'In the future', dùng thì tương lai đơn (will support)." },
-    { q: "If young people learn about ethnic traditions, they __(28)________ understand the value of cultural diversity better.", options: ["will", "could", "would", "might"], correct: 0, hint: "Câu điều kiện loại 1. Dùng 'will' để chỉ kết quả." },
+    { q: "Each ethnic group has its own ________ which reflects its history and beliefs.", options: ["culture", "cultural", "cultures", "culturally"], correct: 0, hint: "Sau tính từ sở hữu 'its own' cần một danh từ số ít (culture)." },
+    { q: "In many villages, people share ________ information and work together to support their community.", options: ["many", "a few", "much", "an"], correct: 2, hint: "'Information' là danh từ không đếm được, dùng 'much'." },
+    { q: "Ethnic people often live close to nature, and they respect ________ nature", options: ["a", "∅", "an", "the"], correct: 3, hint: "Cụm từ cố định: 'respect the nature' (tôn trọng thiên nhiên)." },
+    { q: "In the future, the government ________ more programs to help preserve the cultures of ethnic minorities.", options: ["supports", "supported", "will support", "is supporting"], correct: 2, hint: "Dấu hiệu 'In the future', dùng thì tương lai đơn (will support)." },
+    { q: "If young people learn about ethnic traditions, they ________ understand the value of cultural diversity better.", options: ["will", "could", "would", "might"], correct: 0, hint: "Câu điều kiện loại 1. Dùng 'will' để chỉ kết quả." },
     { q: "I’ve never ______ more than an hour at a time online.", options: ["spend", "spending", "spent"], correct: 2, hint: "Cấu trúc thì hiện tại hoàn thành: S + have/has + V3/ed (spent)." },
     { q: "Today, for instance, I’ve been _____ three times.", options: ["online", "Internet", "website"], correct: 0, hint: "'Been online' (đã truy cập mạng) là cụm từ hợp lý." },
     { q: "I read online magazines and I look _____ information, too.", options: ["at", "for", "in"], correct: 1, hint: "Cụm động từ: 'look for' (tìm kiếm)." },
@@ -176,3 +176,4 @@ function restartGame() {
 }
 
 window.onload = init;
+
